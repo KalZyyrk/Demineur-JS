@@ -1,1 +1,3 @@
-console.log('test')
+import createVirtualGrid from "./createVirtualGrid.js";
+
+const grid = createVirtualGrid();
