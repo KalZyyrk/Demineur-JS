@@ -6,7 +6,7 @@ const createVirtualGrid = () => {
     })
   })
 
-  console.table(grid);
+  return grid;
 }
 
 export default createVirtualGrid;
