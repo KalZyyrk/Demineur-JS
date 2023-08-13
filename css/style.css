@@ -1,0 +1,105 @@
+:root {
+  --color-blue: #39b1c6;
+  --color-dblue: #277986;
+  --color-lblue: #f0f9ee;
+  --color-white: #ffffff;
+  --color-bomb: #e04949;
+
+  --font-title: Montserrat, sans-serif;
+  --font-body: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--color-dblue);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-title);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
+}
+
+.cell {
+  height: 50px;
+  width: 50px;
+  border: 3px solid var(--color-lblue);
+  margin: 3px;
+  background-color: var(--color-dblue);
+  border-radius: 5px;
+}
+
+.cell:hover {
+  background-color: var(--color-lblue);
+  cursor: pointer;
+}
+
+.cell-bomb {
+  background-color: var(--color-bomb);
+  background-image: url("../img/Bomb_icon.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cell-bomb:hover {
+  background-color: var(--color-bomb);
+}
+
+.cell-flag {
+  background-color: var(--color-lblue);
+  background-image: url("../img/Flag_icon_red_4.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cell-empty {
+  box-shadow: inset 2px 2px 5px black, inset -2px -2px 5px black;
+  background-color: var(--color-lblue);
+}
+
+.cell-num {
+  font-family: var(--font-body);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: var(--color-lblue);
+}
+
+.cell-num-1 {
+  color: blue;
+}
+
+.cell-num-2 {
+  color: green;
+}
+
+.cell-num-3 {
+  color: red;
+}
+
+.cell-num-4 {
+  color: navy;
+}
+
+.cell-num-5 {
+  color: maroon;
+}
